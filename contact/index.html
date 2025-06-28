@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Bunyan Systems & Consulting - Mission, story, and values." />
-  <title>About Us - Bunyan Systems</title>
+  <meta name="description" content="Contact Bunyan Systems & Consulting" />
+  <title>Contact - Bunyan Systems</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -70,6 +70,48 @@
       margin-bottom: 1rem;
     }
 
+    .contact-info {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .contact-info a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #1e293b;
+      color: var(--text);
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: var(--muted);
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: var(--accent);
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    button:hover {
+      background-color: #0ea5e9;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -85,7 +127,7 @@
     </a>
     <h1>Bunyan Systems & Consulting</h1>
     <nav>
-      <a href="/index/">Home</a>
+      <a href="/">Home</a>
       <a href="/about/">About</a>
       <a href="/services/">Services</a>
       <a href="/contact/">Contact</a>
@@ -93,18 +135,16 @@
   </header>
 
   <section>
-    <h1>Our Story</h1>
-    <p>Bunyan Systems & Consulting was founded to bring clean, scalable technology to small businesses in Cape Breton and beyond. We help service-based operations bridge the digital gap — without overcomplication or inflated cost.</p>
-    <p>Founder Neil Bunyan combines a decade of field-level quality control experience with a formal background in IT and cybersecurity. His deep understanding of real-world operations and backend systems enables Bunyan Systems to deliver impactful solutions that align with how your business actually works.</p>
-  </section>
+    <h1>Contact Us</h1>
+    <div class="contact-info">
+      <p>We're based in Sydney Mines, NS and proudly serve businesses across Cape Breton, and all Nova Scotia.</p>
+      <p>Email us at <a href="mailto:neilbunyan@bunyansystems.ca">neilbunyan@bunyansystems.ca</a></p>
+      <p>Phone: 902-631-5652</p>
+    </div>
 
-  <section>
-    <h1>Mission & Values</h1>
-    <ul>
-      <li>• Simplifying systems without dumbing them down</li>
-      <li>• Serving local businesses with global-level expertise</li>
-      <li>• Prioritizing clarity, integrity, and sustainable growth</li>
-    </ul>
+  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; text-align: center;">
+    <a href="mailto:neilbunyan@bunyansystems.ca" style="padding: 1rem 2rem; background-color: var(--accent); color: var(--primary); border-radius: 8px; font-weight: 600; text-decoration: none;">📧 Email Us</a>
+    <a href="tel:9026315652" style="padding: 1rem 2rem; background-color: var(--accent); color: var(--primary); border-radius: 8px; font-weight: 600; text-decoration: none;">📞 Call Us</a>
   </section>
 
   <footer>
