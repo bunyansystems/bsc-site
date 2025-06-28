@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bunyan Systems and Consulting - Strategic consulting, technology integration, and process optimization for modern businesses." />
+  <meta name="description" content="Bunyan Systems & Consulting - Smarter systems, real results." />
   <title>Bunyan Systems</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -13,6 +12,7 @@
       --accent: #38bdf8;
       --text: #f8fafc;
       --muted: #94a3b8;
+      --bg-light: #1e293b;
     }
 
     * {
@@ -29,7 +29,8 @@
     }
 
     header {
-      padding: 2rem;
+      background: var(--bg-light);
+      padding: 1.5rem;
       text-align: center;
     }
 
@@ -37,7 +38,7 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 1rem;
     }
 
     nav a {
@@ -50,19 +51,16 @@
       color: var(--accent);
     }
 
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    h1, h2 {
-      margin-bottom: 1rem;
+    .logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem auto;
     }
 
     .hero {
       padding: 4rem 2rem;
+      text-align: center;
     }
 
     .hero h1 {
@@ -70,15 +68,26 @@
       color: var(--accent);
     }
 
-    .contact a {
+    .hero p {
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    .btn {
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       background-color: var(--accent);
       color: var(--primary);
       padding: 0.75rem 1.5rem;
       border-radius: 5px;
       text-decoration: none;
       font-weight: 600;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
     }
 
     footer {
@@ -91,38 +100,27 @@
 </head>
 <body>
   <header>
-    <h1>Bunyan Systems</h1>
+    <a href="index.html">
+      <img src="logo.png" alt="Bunyan Systems Logo" class="logo">
+    </a>
+    <h1>Bunyan Systems & Consulting</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Strategic Solutions. Operational Excellence.</h1>
-    <p>Bunyan Systems provides tailored consulting, integration support, and technical guidance to streamline modern businesses.</p>
+    <h1>Smarter Systems. Real Results.</h1>
+    <p>Custom consulting, systems integration, and cybersecurity for small businesses and professionals across Nova Scotia.</p>
+    <a href="services.html" class="btn">View Services</a>
   </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>We're a Nova Scotia-based consultancy specializing in operational efficiency, technology adoption, and quality systems. We bring logic, precision, and care to every client we work with.</p>
-  </section>
-
-  <section id="services">
-    <h2>Services</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      <li>• Field service optimization & workflow automation</li>
-      <li>• Quality and compliance consulting</li>
-      <li>• Technology integration (Salesforce, Google Workspace, etc.)</li>
-      <li>• Business process streamlining and SOP design</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Reach out to discuss your project or request a consultation.</p>
-    <a href="mailto:neilbunyan@bunyansystems.ca">Email Us</a>
+  <section>
+    <h2>Why Work With Us</h2>
+    <p>Bunyan Systems delivers clean, secure, and modern systems without the noise. We bring practical tech to Cape Breton businesses ready to level up.</p>
   </section>
 
   <footer>
